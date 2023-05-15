@@ -16,6 +16,7 @@ public class Print_AllRootToLeafPaths {
 		if(root == null){
 			return;
 		}
+		// Only add to the list when leaf node is reached
 		if(root.getLeft() == null && root.getRight() == null){
 			paths.add(path + root.getData());
 		}
